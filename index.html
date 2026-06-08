@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ovenly Bakery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <nav class="nav">
+        <div class="nav__logo">Ovenly<span>.</span></div>
+        <ul class="nav__links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#featured">Order</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+            <a href="#" class="nav-icon"><i class="fa-regular fa-user"></i> My Account</a>
+            <a href="#" class="nav-icon"><i class="fa-solid fa-cart-shopping"></i> Cart</a>
+        </div>
+        <div class="hamburger" id="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero__content">
+            <p class="hero__tag">Freshly Baked Every Day</p>
+            <h1>The Perfect Baked<br /><em>Cake Everyday!</em></h1>
+            <p class="hero__desc">Freshly baked breads, cakes, and cookies made with love using fresh, natural, and
+                wholesome ingredients in every bite.</p>
+            <div class="hero__btns">
+                <a href="#about" class="btn btn--primary">Read More</a>
+                <a href="#featured" class="btn btn--outline">Order Now</a>
+            </div>
+            <div class="hero__dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="hero__img">
+            <div class="hero__img-circle"></div>
+            <img src="./images/cake.jpg" alt="Chocolate Cake" />
+            <div class="hero__float float1">🍓 Fresh Ingredients</div>
+            <div class="hero__float float2">⭐ 4.9 Rating</div>
+        </div>
+    </section>
+
+    <!-- WELCOME / CATEGORIES -->
+    <section class="welcome section" id="menu">
+        <div class="container">
+            <h2>Welcome To Our <em>Store</em></h2>
+            <p class="welcome__sub">Indulge in freshly baked breads, cakes, cookies, and pastries, all crafted daily
+                with love, care, and the finest ingredients to make every bite unforgettable.</p>
+            <div class="categories">
+                <div class="cat-card">
+                    <div class="cat-card__img">🎂</div>
+                    <p>Cake</p>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-card__img">🍰</div>
+                    <p>Pastry</p>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-card__img">🍪</div>
+                    <p>Cookies</p>
+                </div>
+                <div class="cat-card">
+                    <div class="cat-card__img">🍞</div>
+                    <p>Bread</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="about__grid">
+                <div class="about__imgs">
+                    <img src="./images/bakery.jpg" alt="bakery" class="about__main-img" />
+                    <div class="about__badge"><span>🏆</span> Best Bakery 2024</div>
+                </div>
+                <div class="about__text">
+                    <span class="section-tag">About Us</span>
+                    <h2>About <em>Ovenly Bakery</em></h2>
+                    <p>Ovenly Bakery brings joy with every bite. We craft fresh breads, cakes, and pastries daily, using
+                        the finest ingredients to make every treat unforgettable and delightful for every occasion.</p>
+                    <p>Our passion for baking goes beyond recipes — it's about creating moments of happiness with every
+                        product that leaves our kitchen.</p>
+                    <div class="about__stats">
+                        <div class="astat"><span>150+</span>
+                            <p>Menu Items</p>
+                        </div>
+                        <div class="astat"><span>5K+</span>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="astat"><span>10+</span>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+                    <a href="#featured" class="btn btn--primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FEATURED FOOD -->
+    <section class="featured section" id="featured">
+        <div class="container">
+            <span class="section-tag">Our Menu</span>
+            <h2>Our Featured <em>Food</em></h2>
+            <p class="welcome__sub">Discover our featured treats: freshly baked breads, cakes, cookies, and pastries
+                made daily with love.</p>
+
+            <div class="food-grid" id="foodGrid">
+                <div class="food-card">
+                    <div class="food-card__img"><img src="./images/bday cake.jpg" alt="Birthday Cake" /></div>
+                    <p class="food-card__price">$35.00</p>
+                    <p class="food-card__name">Birthday Cake</p>
+                    <button class="food-card__btn"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+                <div class="food-card">
+                    <div class="food-card__img"><img src="./images/muffins.jpg" alt="Muffin" /></div>
+                    <p class="food-card__price">$15.00</p>
+                    <p class="food-card__name">Muffin</p>
+                    <button class="food-card__btn"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+                <div class="food-card">
+                    <div class="food-card__img"><img src="./images/biscuits.jpg" alt="Biscuits" /></div>
+                    <p class="food-card__price">$15.00</p>
+                    <p class="food-card__name">Biscuits</p>
+                    <button class="food-card__btn"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+                <div class="food-card">
+                    <div class="food-card__img"><img src="./images/croissant.jpg" alt="Croissant" /></div>
+                    <p class="food-card__price">$45.00</p>
+                    <p class="food-card__name">Croissant</p>
+                    <button class="food-card__btn"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+                <div class="food-card">
+                    <div class="food-card__img"><img src="./images/tarts.jpg" alt="Tarts" /></div>
+                    <p class="food-card__price">$15.00</p>
+                    <p class="food-card__name">Tarts</p>
+                    <button class="food-card__btn"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+                <div class="food-card">
+                    <div class="food-card__img"><img src="./images/cheese cake.jpg" alt="Cheesecake" /></div>
+                    <p class="food-card__price">$20.00</p>
+                    <p class="food-card__name">Cheesecake</p>
+                    <button class="food-card__btn"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+                <div class="food-card">
+                    <div class="food-card__img"><img src="./images/pie.jpg" alt="Pie" /></div>
+                    <p class="food-card__price">$15.00</p>
+                    <p class="food-card__name">Pie</p>
+                    <button class="food-card__btn"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+                <div class="food-card">
+                    <div class="food-card__img"><img src="./images/coffee.jpg" alt="Coffee" /></div>
+                    <p class="food-card__price">$15.00</p>
+                    <p class="food-card__name">Coffee</p>
+                    <button class="food-card__btn"><i class="fa-solid fa-cart-plus"></i></button>
+                </div>
+            </div>
+
+            <div class="food-pagination">
+                <button class="page-btn" id="prevBtn"><i class="fa-solid fa-chevron-left"></i> Previous</button>
+                <button class="page-btn active" id="nextBtn">Next <i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <!-- APP SECTION -->
+    <section class="app-section section">
+        <div class="container">
+            <div class="app-grid">
+                <div class="app-phones">
+                    <div class="phone phone1">
+                        <div class="phone-screen">
+                            <div class="phone-header">🎂 Ovenly</div>
+                            <img src="./images/photo.jpg"
+                                alt="app" />
+                        </div>
+                    </div>
+                    <div class="phone phone2">
+                        <div class="phone-screen">
+                            <div class="phone-header">🛒 Cart</div>
+                            <img src="./images/photoe.jpg"
+                                alt="app2" />
+                            <div class="phone-price">$15.00</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="app-text">
+                    <span class="section-tag">Mobile App</span>
+                    <h2>App Is Soon On <em>App Store</em></h2>
+                    <p>Get ready for sweetness at your fingertips! The Ovenly Bakery app is launching soon on the App
+                        Store. Order your favorite treats anytime, anywhere.</p>
+                    <div class="app-btns">
+                        <a href="#" class="store-btn">
+                            <i class="fa-brands fa-apple"></i>
+                            <div><span>Download on the</span><strong>App Store</strong></div>
+                        </a>
+                        <a href="#" class="store-btn">
+                            <i class="fa-brands fa-google-play"></i>
+                            <div><span>Get it on</span><strong>Google Play</strong></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BEST SELLER -->
+    <section class="bestseller section">
+        <div class="container">
+            <div class="bestseller__grid">
+                <div class="bestseller__text">
+                    <span class="section-tag">This Week</span>
+                    <h2>Best Sell Food<br /><em>In This Week!</em></h2>
+                    <div class="bestseller__price">$15.00</div>
+                    <div class="bestseller__stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Our chocolate cake is a decadent delight, baked with rich cocoa and layered with silky frosting.
+                        Moist, fluffy, and irresistibly smooth — it's the perfect indulgence to sweeten celebrations,
+                        brighten moods, and satisfy every chocolate lover's craving.</p>
+                    <a href="#" class="btn btn--primary">Buy Now</a>
+                </div>
+                <div class="bestseller__img">
+                    <img src="./images/seller.jpg"
+                        alt="Best Seller Cake" />
+                    <div class="bestseller__deco"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter section">
+        <div class="container">
+            <h2>Subscribe To Our <em>Newsletter</em></h2>
+            <p>Subscribe to our newsletter and never miss a treat! Get exclusive offers, fresh updates, and sweet
+                surprises from Ovenly Bakery delivered straight to your inbox.</p>
+            <form class="newsletter__form" onsubmit="return false;">
+                <input type="email" placeholder="Email Address" />
+                <button type="submit" class="btn btn--primary">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">Ovenly<span>.</span></div>
+                    <p>Freshly baked breads, cakes, and treats — made daily with love.</p>
+                    <div class="footer__socials">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer__col">
+                    <h4>Resource</h4>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Our Blog</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#">Cakes</a></li>
+                        <li><a href="#">Cookies</a></li>
+                        <li><a href="#">Bread</a></li>
+                        <li><a href="#">Pastries</a></li>
+                        <li><a href="#">Bakery Data</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Cake Design</a></li>
+                        <li><a href="#">Online Delivery</a></li>
+                        <li><a href="#">Gift Wrapping</a></li>
+                        <li><a href="#">Bulk Orders</a></li>
+                        <li><a href="#">As Available</a></li>
+                    </ul>
+                </div>
+                <div class="footer__col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-location-dot"></i> 123 Bakery Street, City</li>
+                        <li><i class="fa-solid fa-phone"></i> +1 234 567 890</li>
+                        <li><i class="fa-solid fa-envelope"></i> hello@ovenly.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2025 Ovenly Bakery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
